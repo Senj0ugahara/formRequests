@@ -137,10 +137,11 @@ function dataForm() {
     }
   })
 
+  console.log(request)
+
   fetch(request).then(
     function(response) {
       console.log(response)
-      return response.json();
     },
     function(error) {
       console.log(error)
