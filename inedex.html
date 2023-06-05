@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      background-color: #b1b1b1;
+    }
+    button {
+      padding: 16px;
+      background: skyblue;
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .form {
+      max-width: 360px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border-radius: 12px;
+      background-color: #fff;
+    }
+    .input {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 2px solid skyblue;
+      border-radius: 10px;
+      background: transparent;
+      font-size: 20px;
+    }
+    .textarea {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 2px solid skyblue;
+      border-radius: 10px;
+      background: transparent;
+      font-size: 20px;
+      resize: none;
+    }
+    .inCorrect {
+      border: 2px solid red;
+    }
+    .correct {
+      border: 2px solid green;
+    }
+  </style>
+</head>
+<body>
+  <button>Открыть форму</button>
+  <form action="/processjson" id="form" class="form">
+    <input type="text" class="input" name="phone" id="phone" placeholder="+7 (999) 999-99-99">
+    <input type="text" class="input" name="name" id="name" placeholder="Имя">
+    <textarea class="textarea" name="message" id="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+    <button id="submit">Отправить</button>
+  </form>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/inputMask.js"></script>
+  <script src="scripts/formData.json"></script>
+
+</body>
+</html>
